@@ -1,0 +1,409 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+% {{{
+\usepackage[top=0.3in, bottom=0.5in, left=0.4in, right=0.4in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{booktabs}
+\usepackage[colorinlistoftodos]{todonotes}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{enumitem}
+
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+% \textheight=10in
+\raggedbottom
+% \raggedright
+\setlength{\tabcolsep}{0in}
+\setlist[itemize]{leftmargin=*}
+
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.5cm}
+\renewcommand{\labelitemii}{$\circ$}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.375in}
+%\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{0.1375in}
+%\addtolength{\textheight}{1.75in}
+\hyphenation{thatshouldnot}
+\pagestyle{empty}
+% }}}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small
+        {
+            \begin{minipage}
+                {0.992\textwidth}\textbf{{\textsc{#1 \vphantom{p\^{E}} }}}
+                \\[-0.3cm]
+                \hrule
+            \end{minipage}
+            \\[-0.5cm]
+        }
+ }}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+\newcommand{\resEduHeading}[6]{
+  \begin{tabular*}{7.1in}{l @{\extracolsep{\fill}} r}
+    \textbf{\normalsize #1} \\
+    \textit{#2} & \textit{#3} \\
+    {\normalsize #4} & \textit{{#5} \textbf{#6}}
+  \end{tabular*}
+}
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+%{{{
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+% \hspace{0.2cm}\\
+
+\begin{table}
+    \begin{minipage}{0.15\linewidth}
+        \centering
+        \includegraphics[width=25mm]{iith_logo_black.jpg}
+    \end{minipage}
+    \begin{minipage}{0.65\linewidth}
+        %\centering
+        \setlength{\tabcolsep}{30pt}
+        \def\arraystretch{1.15}
+        \begin{tabular}{ll}
+            \textbf{Raj Kumar Maurya}  &  \href{https://www.linkedin.com/in/therajmaurya}{\textbf{LinkedIn:} /therajmaurya}\\
+            \textbf{Senior Data Scientist} & 
+            \href{https://github.com/therajmaurya}{\textbf{Github:} /therajmaurya}\\
+            \textbf{Ernst \& Young} & 
+            \href{https://therajmaurya.github.io}{\textbf{Website:} therajmaurya.github.io}\\
+            \href{tel:+919044883800}{\textbf{Contact:} +91-9044883800} & \href{https://www.credly.com/users/therajmaurya/badges}{\textbf{Badges}: credly.com/therajmaurya}\\
+            \href{mailto:therajmaurya@gmail.com}{\textbf{Email:} therajmaurya@gmail.com} & 
+            \href{https://therajmaurya.github.io/certs}
+            {\textbf{Certifications: } therajmaurya.github.io/certs}
+        \end{tabular}
+    \end{minipage}\hfill
+\\[-0.4cm]
+\end{table}    
+
+
+\noindent
+\resheading{\textbf{\large Work Experience ($\sim$6 years)}}\\[\lsep]
+% {{{
+\begin{itemize}
+
+    \item \textbf{Senior Data Scientist, Ernst \& Young Global Delivery Services (EY GDS)} \hfill {\emph{(July 2022 - Present)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Responsible for building end-to-end Generative AI, NLP, and Computer Vision solutions for EY Clients
+        \item Led and guided teams of up to 10 professionals in client engagements across diverse domains, including pharmaceuticals, automobiles, and real estate
+        % \item Built MLOps pipelines for client-specific needs
+        \item Engaged with businesses to analyze business opportunities and proposed strategic approaches and solutions
+        \item Fine-tuned Falcon-40B, FLAN-T5, LLaMA-65B, etc. open-source LLMs on resource constrained GPUs using techniques like Quantization, LoRA, QLoRA, etc.
+    \\ [-0.5cm]
+    \end{itemize}
+    
+    \item \textbf{Data Scientist, Diwo (DataFactZ) Pvt. Ltd.} \hfill {\emph{(July 2018 - June 2022)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Responsible for building end-to-end natural language processing solutions for the Diwo ASK Platform
+        \item Led and guided teams of up to 3 professionals in platform initiatives and client engagements spanning retail, insurance, and finance domains
+        \item Worked with cross-functional teams to gather data, domain knowledge, handle dependencies, perform overlapping tasks, and deploy models in production  
+        \item Worked on model explainability and trust aspect for client-specific projects
+        \item Performed causal inference analysis using the What-If Tool to find out several impact points
+        % \item Developed Sklearn and TensorFlow model support into Diwo's framework-agnostic model deployment server
+    \\ [-0.5cm]
+    \end{itemize}
+    
+    \item \textbf{Data Science Intern, Tidyquant Pvt. Ltd.} \hfill {\emph{(Jan 2018 - Apr 2018)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Implemented various Machine Learning algorithms for tasks like Regression, Classification, Clustering, Time series analysis, and Association rules mining using Python for a wide range of problems on masked data 
+        \item Used the concept of transfer-learning, ensembling (stacking, bagging, boosting), feature importance, feature selection, PCA, etc. to enhance model performance 
+        % \item Configured Data Pipeline for real-time data ingestion, transformation, loading, and dashboarding
+    \\ [-0.5cm]
+    \end{itemize}
+\end{itemize}
+% }}}
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Education}}\\[\lsep]
+\vspace{8pt}
+\begin{itemize}
+    \item \resEduHeading{Master of Technology (Specialization: Data Science)}
+    {Computer Science and Engineering}
+    {July 2022 -- June 2025}
+    {Indian Institute of Technology (IIT), Hyderabad}
+    {Ongoing}
+    {}
+    \item \resEduHeading{Bachelor of Technology}
+    {Information Technology}
+    {July 2014 -- June 2018}
+    {Dr. A.P.J. Abdul Kalam Technical University, Lucknow}
+    {Percentage:}
+    {78.1}
+\end{itemize}
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Industry Projects}}\\[\lsep] 
+% {{{
+\begin{itemize}
+\item \textbf{Infrastructure-as-Code (IAC) Terraform Script Generation [Pharmaceutical Sector]}  \\
+    \emph{EY -- Generative AI, Retrieval-augmented Generation (RAG), GPT, DevOps, AWS, Python} \hfill {\emph{(Sep 2023 - Present)}}
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item \textbf{Objective:} To enhance IAC compliance and adoption across the organization, reducing IAC scripting time from weeks to days. And, to develop a chat interface for personalized IAC script generation, and mechanisms to validate user-uploaded scripts for compliance while offering mitigation suggestions
+        % \begin{itemize}\itemsep \isep
+        % \item Enhance IAC compliance and adoption across the organization
+        % \item Reduce IAC scripting time from weeks to days
+        % \item Develop a chat interface for personalized IAC script generation
+        % \item Validate user-uploaded scripts for compliance and provide mitigation suggestions.
+        % % \item To increase IAC compliance and adoption within the organization for new and existing projects, as well as cut down the IAC scripting time from weeks to days while streamlining their usage
+        % % \item To develop a chat interface to gather user requirements and generate the IAC scripts using internal custom modules/patterns that satisfy the user's personalized requirements and adhere to the organization's custom guidelines and checks
+        % % \item User can upload their scripts and the solution validates them for compliance, gets mitigation suggestions, and generates reference scripts for them to comply
+        % \end{itemize}
+
+    \item \textbf{Methodologies: }  RAG-based approach, signature matching, slot-filling, and multi-stage few-shot prompting
+    \item \textbf{Result}: Over 50\% reduction in manual efforts for IAC provisioning and improved adoption
+    % \item The solution utilized a RAG-based approach combined with signature matching, slot-filling, and multi-stage few-shot prompting to achieve the objectives, along with post-processing, consistency checks \& balances, and domain optimization to save tokens. It reduced the manual efforts by more than 50\% for IAC provisioning and led to improved adoption.
+    % \item Working now on Custom Pattern Generation, Hierarchical IAC Knowledge Base powered generic knowledge-synthesis and contextual reasoning/recommendations feature, Architecture Diagram based Infra Code Generation, and TSA (Target State Architecture) Review Process Integration
+    \\ [-0.5cm]
+    \end{itemize}
+
+\item \textbf{Photo-review Automation [Automobile Sector]}  \\
+    \emph{EY -- Computer Vision, Text Processing, ML, MLOps, Azure, Python} \hfill {\emph{(Jul 2022 - Sep 2023)}}
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    	\item \textbf{Objective:} To enhance the customer experience on the resale car company's website by accurately associating images with different vehicle perspectives, flagging any deviations for review, while minimizing the overall review effort 
+        \item Led the development of the end-to-end solution, employing transfer learning on pre-trained Computer Vision models for precise classification of car images taken from diverse angles. Also utilized Text and Object Detection Models for extracting car features, resulting in an overall 92\% reduction in manual effort during the photo review process
+        \item Tackled high confidence incorrect prediction problem and designed a custom algorithm for thresholding
+        \item Integrated and deployed the final solution in production having 16+ models like VGG16, ResNet, YOLOv5, YOLOv8, SVM, etc. with CI/CD in Azure DevOps to achieve the objective
+        \item Designed a custom drift tracking mechanism and built an auto-retraining pipeline to retrain the models with the fail-safe feature.
+        \\ [-0.5cm]
+    \end{itemize}
+
+\item \textbf{Functional Testing Automation [Testing Domain]}  \\
+    \emph{EY -- Generative AI, Azure Function API, Python} \hfill {\emph{(Apr 2022 - Oct 2022)}}
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    \item \textbf{Objective:} To automate the end-to-end functional testing framework using GenAI with Human-in-the-loop
+    \item Generated intelligent test scenarios and cases based on a custom web page
+    \item Automated functional testing using Selenium scripts generated by GenAI
+    \item Enabled controlled updates to existing test cases based on partial web page changes
+    \item Built a GenAI-powered Synthetic Data Generation Tool for test cases and a Web-page Element Locator Extractor Tool
+    \item Integrated a chat interface for fine-tuning outputs at each stage
+    \item \textbf{Result:} Expected to enhance testing efficiency by 30-50\%. 
+    	% \item Developed end-to-end functional testing automation framework using GenAI with Human-in-the-loop
+     %        \item Generated intelligent test scenarios and test cases based on the custom website
+     %        \item Generates Selenium script to perform functional testing automatically using GenAI
+     %        \item Provided a controlled mechanism to update the existing test cases based on the partial changes to a web page
+     %        \item Built GenAI-powered Synthetic Data Generation Tool to generate synthetic data for test cases, and Web-page Element Locator Extractor Tool to help identify the element locators to populate the test values
+     %        \item At every stage, a chat interface is available to tweak the output of each stage using compact user instructions
+     %        \item This feature is to be integrated into the existing tool and aims to enhance the testing efficiency of testers by 30-50\%.
+        \\ [-0.5cm]
+    \end{itemize}
+
+\item \textbf{Related Questions Suggestion [Diwo ASK Platform]}  \\
+    \emph{Diwo -- Natural Language Processing, BERT, Flask API, Python} \hfill {\emph{(Sep 2021 - May 2022)}}
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    	\item \textbf{Objective:} To reduce the barrier for users to interact with the system by suggesting cold start questions and context-aware questions during an active session 
+        \item Built context-aware prediction of questions that the user might be interested in asking next based on their past interaction, behavior and questions
+        \item Conceptualised and designed the end-to-end architecture and approach from scratch 
+        \item The modeling also encompasses user permission level security in post-processing and multi-use case aspects in pre-processing with the help of ontology. 
+        \item The click rate of the suggestions was close to 30\% across use cases.
+        \\ [-0.5cm]
+    \end{itemize}
+
+\item \textbf{Named Entity \& Action Recognition [Diwo ASK Platform]} \hfill {\emph{(Dec 2020 - Sep 2021)}}\\The objective was to replace manual ontology-based logic with machine learning-based entity and action recognition. Achievements include enhancing rule-based systems with transfer learning, addressing user state management, and improving system intelligence in named entity and action recognition 
+\\ [-0.5cm]
+
+% \item \textbf{Named Entity \& Action Recognition [Diwo ASK Platform]}  \\
+%     \emph{Diwo -- Natural Language Processing, Spacy, Flask API, Python} \hfill {\emph{(Dec 2020 - Sep 2021)}}
+%     \\[-0.5cm]
+%     \begin{itemize}\itemsep \isep
+%         \item \textbf{Objective:} To replace the unreliable manual ontology-based custom logic with a more reliable machine learning-based entity and action recognition  
+%         \item Enhanced the existing rule-based implementation and made it intelligent using transfer learning from the Spacy model for complex entities 
+%         \item Worked on user state management and conflict resolution of entities 
+%         \item Improved the overall intelligence of the system w.r.t named entity and action recognition 
+%         \\ [-0.5cm]
+%     \end{itemize}
+
+\item \textbf{Command Handling [Diwo ASK Platform]}  \hfill {\emph{(Jul 2020 - Dec 2020)}}\\
+The goal was to replace keyword match-based query classification with an ML-based method. A BERT model was fine-tuned for sub-command classifications, and a BERT embeddings-based MLP model was developed for binary classification of command types and entity extraction based on intent-action pairs
+\\ [-0.5cm]
+
+% \item \textbf{Command Handling [Diwo ASK Platform]}  \\
+%     \emph{Diwo -- Natural Language Processing, BERT, Flask API, Python} \hfill {\emph{(Jul 2020 - Dec 2020)}}
+%     \\[-0.5cm]
+%     \begin{itemize}\itemsep \isep
+%     	\item \textbf{Objective:} To replace the keyword match-based query classification with an ML-based approach
+%             \item Built a model to classify commands from non-command questions and then to classify the type of commands and then extract relevant entities from the question based on its intent-action pair
+%             \item Fine-tuned BERT model for sub-command classifications and built BERT embeddings-based MLP model for binary classification.
+%         \\ [-0.5cm]
+%     \end{itemize}
+
+\item \textbf{Category Expansion/Rationalisation [Retail Sector]} \hfill {\emph{(Jan 2020 - Jun 2020)}} \\
+The objective was to introduce new products by analyzing past product performance and predicting revenue potential and cannibalization impact. Floor-set information was utilized to extract similarity features in a regression model for baseline prediction and cannibalization study 
+\\ [-0.5cm]
+% \item \textbf{Category Expansion/Rationalisation [Retail Sector]}  \\
+%     \emph{Diwo -- Core Machine Learning, Python} \hfill {\emph{(Jan 2020 - Jun 2020)}}
+%     \\[-0.5cm]
+%     \begin{itemize}\itemsep \isep
+%     	\item \textbf{Objective:} To introduce new products based on the performance of past products of a similar category and predict its revenue potential along with cannibalization impact
+%             \item Used floor-set information to break down the data and extracted similarity features in the regression model for baseline prediction and to study cannibalization
+%         \\ [-0.5cm]
+%     \end{itemize}
+
+\item \textbf{Paid Rate Prediction for quotes offered by insurer [Insurance Sector]} \hfill {\emph{(Nov 2018 - Dec 2019)}}\\
+The goal was to predict customer acceptance of offered quotes to optimize marketing strategies. A model was developed with causal inference to identify key KPIs influencing quote acceptance and addressed imbalanced data issues
+\\ [-0.5cm]
+
+% \item \textbf{Paid Rate Prediction for quotes offered by insurer [Insurance Sector]}  \\
+%     \emph{Diwo -- Core Machine Learning, Python} \hfill {\emph{(Nov 2018 - Dec 2019)}}
+%     \\[-0.5cm]
+%     \begin{itemize}\itemsep \isep
+%     	\item \textbf{Objective:} To predict whether a customer will accept the quote offered or not within the specified periods, to streamline the marketing strategy and target the potential customer 
+%         \item Built the model and performed causal inference for the client to find the list of KPIs affecting the quote acceptance 
+%         \item Handled the issue of imbalanced data
+%         \\ [-0.5cm]
+%     \end{itemize}
+
+\end{itemize}
+% }}}
+
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Other Projects}}\\[\lsep]
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+
+
+\item \textbf{Approval Engine (EY -- Real Estate Sector POC): }{Developed GenAI-powered approval engine to identify the set of approvers for a fund request based on unstructured rules and exceptions mentioned in an Excel file (updated dynamically)}
+\\ [-0.6cm]
+
+\item \textbf{Test \& Control Matching for Performance Monitoring Report (Diwo -- Finance Sector POC): }{Implemented K-Nearest Neighbours, KMeans, and Decision Tree for explainable matching of Control cardholder groups for selected Test cardholder groups. Applied parallelization and run-time optimization to reduce inference time}
+\\ [-0.6cm]
+
+\item \textbf{Assortment Optimisation (Diwo -- Retail Sector POC): }{Goal was to forecast sales at Store-SKU level to predict demand and dispatch inventory accordingly to avoid wastage of fast fashion products. Built uni-variate time series models at category/attribute level and used floor-set \& store features to provide baseline recommendations 
+}
+\\ [-0.6cm]
+
+\item \textbf{Cross-sell/Up-sell opportunity (Diwo -- Retail Sector POC):} Explored Cross-sell/Up-sell opportunity (Retail) by analyzing 250 million records for 10 million customers along with revenue impact using Association Rules
+\\ [-0.6cm]
+
+% \item Forecasting Retail Outlets' Opening Date after COVID-19 First-wave using SIR Modeling
+% \\ [-0.5cm]
+
+% \item Predicting Customer Delinquency (Bank) with small dataset to assess overall risk on working capital
+% \\ [-0.5cm]
+
+% \item Product Cannibalisation Prediction (Retail) for existing SKUs due to launch of new SKUs
+% \\ [-0.5cm]
+
+
+% \item Built Customer Revisit Propensity (Retail) model to predict customer return to better plan services 
+% \\ [-0.5cm]
+
+% \item Auto-suggest typing model for Diwo ASK module to suggest possible questions dynamically while typing 
+% \\ [-0.5cm]
+
+\item \textbf{Personal Project:} Conceptualized and designed Complaint \& Feedback Mgmt. System based on Twitter streaming data
+\\ [-0.6cm]
+
+\item \textbf{Personal Project:} Built Wikipedia Search Engine for searching a subset of Wikipedia data on distributed systems 
+\\ [-0.5cm]
+\end{itemize}
+%}}}
+
+
+% \resheading{\textbf{\large Courses Taken During Masters }}\\[\lsep]
+% \\[-0.3cm]
+% %{{{
+% \begin{flushleft}
+%     \begin{tabular}{lll}
+%         Mathematical Foundations of Data Science & \qquad Foundations of Machine Learning\\
+%         Deep Learning & \qquad Natural Language Processing\\
+%         Reinforcement Learning  & \qquad Bayesian Data Analysis\\
+%         Distributed Systems & \qquad Quantum Computing
+%     \end{tabular}
+% \end{flushleft}
+% %}}} 
+
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}
+  \item \textbf{Languages}: Python, SQL, C/C++\\[-0.6cm]
+  \item \textbf{Data Science}: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Conversational AI  \\[-0.6cm]
+  \item \textbf{Generative AI (GenAI)}: Large Language Models (LLMs), Attention \& Transformers, Stable Diffusion, OpenAI GPT, Langchain, VectorDB, LLM Agents, Prompt Engineering, Chunking Strategy, LLM Context Management, Memory Management, and State Management, Retrieval-augmented Generation (RAG), LLM Finetuning, LLMOps, Model Optimization for GPUs \\[-0.6cm]
+  \item \textbf{Tools/Libraries}: Pandas, Numpy, Scikit-learn, PyTorch, Keras, Spacy, NLTK, Matplotlib, Plotly, Flask, Streamlit \\[-0.6cm]
+  \item \textbf{Others}: MySQL, Git, LaTeX, Jira, Confluence, Docker, AWS, Azure, HuggingFace, MLFlow, MLOps, HMTL/CSS\\[-0.5cm]
+\end{itemize}
+% }}}
+
+% \resheading{\textbf{\large Areas of Interest}}\\[\lsep]
+% %{{{
+%     \begin{itemize}
+%     \item[] 
+%     \hspace{-0.4cm} $\bullet$ Machine Learning 
+%     \hspace{0.2cm} $\bullet$ Natural Language Processing 
+% \end{itemize}
+% %}}}
+
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Achievements and Activities}}\\[\lsep] 
+\\[-0.3cm]
+%{{{
+\begin{itemize}\itemsep \isep
+
+\item Winner of a national-level Big Data Hackathon, BigDataThon'17, organized by ABESIT, Ghaziabad
+
+\item Was an active member of the college technical society -- Big Data Centre of Excellence (BDCOE) (2016-2018)
+
+\item Organised and mentored workshops on Big Data and Data Science technologies for three consecutive years at BDCOE
+
+\item Participated in the Smart India Hackathon in Nagpur organized by MHRD, AICTE, India (2018)
+
+% \item Participated in the World's Largest Hackathon ever at Rajasthan IT Day, Jaipur, India (March 2018)
+
+\item Received multiple Spot awards at EY. Recognised as the best employee of the month twice at Diwo.
+
+% \item Among 300+ participants worldwide to complete IBM Quantum Computing Challenge 2020 (Advanced)
+
+% \item \textbf{Certifications}: Microsoft Certified in AI-900
+% \item \textbf{Specializations}: Machine Learning \& Deep Learning Specialization from Coursera (Andrew Ng)
+% \item \textbf{Badges}: EY Artificial Intelligence (AI) Silver Badge, EY Mobility Sector Bronze Badge, EY Finance Sector Bronze Learning Badge, IBM Advanced Quantum Challenge Badge, etc.
+    
+	
+\end{itemize}
+%}}}
+\end{document}

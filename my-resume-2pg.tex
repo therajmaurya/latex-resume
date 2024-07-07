@@ -1,7 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 %-----------------------------------------------------------
 % {{{
-\usepackage[top=0.4in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage[top=0.3in, bottom=0.4in, left=0.5in, right=0.5in]{geometry}
 
 \usepackage{graphicx}
 \usepackage{hyperref}
@@ -16,6 +16,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[ansinew]{inputenc}
 \usepackage{enumitem}
+\usepackage{multicol}
 
 % \usepackage{helvetica}
 % \usepackage{array}
@@ -66,6 +67,8 @@
     {\normalsize #4} & \textit{{#5} \textbf{#6}}
   \end{tabular*}
 }
+
+
 % \textit{#3} &  \\
 %-----------------------------------------------------------
 
@@ -177,21 +180,63 @@
 \vspace{4pt}
 \noindent
 \resheading{\textbf{\large Education}}\\[\lsep]
-\vspace{8pt}
+\vspace{0pt}
+
+
+\begin{multicols}{2}
+
+    \begin{list}{}{\setlength{\leftmargin}{0.5cm} \setlength{\rightmargin}{0cm} \setlength{\itemindent}{0cm}}
+        \item 
+        \textbf{Master of Technology (Data Science)} \\
+        Indian Institute of Technology (IIT), Hyderabad \\
+        Start Year: 2022
+    \end{list}
+
+    \columnbreak
+
+    \begin{list}{}{\setlength{\leftmargin}{0.5cm} \setlength{\rightmargin}{0cm} \setlength{\itemindent}{0cm}}
+        \item 
+        \textbf{Bachelor of Technology (Information Technology)} \\
+        Dr. A.P.J. Abdul Kalam Technical University, Lucknow \\
+        Start Year: 2014
+    \end{list}
+
+\end{multicols}
+
+% \begin{itemize}
+%     \item \resEduHeading{Master of Technology (Data Science)}
+%     {Computer Science and Engineering}
+%     % {July 2022 -- June 2025}
+%     {Start Year: 2022}
+%     {Indian Institute of Technology (IIT), Hyderabad}
+%     % {Ongoing}
+%     {}
+%     {}
+%     \item \resEduHeading{Bachelor of Technology}
+%     {Information Technology}
+%     % {July 2014 -- June 2018}
+%     {Start Year: 2014}
+%     {Dr. A.P.J. Abdul Kalam Technical University, Lucknow}
+%     % {Percentage: 78.1}
+%     {}
+%     {}
+% \end{itemize}
+
+\vspace{-4pt}
+\noindent
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+
+%{{{
 \begin{itemize}
-    \item \resEduHeading{Master of Technology (Data Science)}
-    {Computer Science and Engineering}
-    {July 2022 -- June 2025}
-    {Indian Institute of Technology (IIT), Hyderabad}
-    {Ongoing}
-    {}
-    \item \resEduHeading{Bachelor of Technology}
-    {Information Technology}
-    {July 2014 -- June 2018}
-    {Dr. A.P.J. Abdul Kalam Technical University, Lucknow}
-    {Percentage: 78.1}
-    {}
+  \item \textbf{Languages}: Python, SQL\\[-0.5cm]
+  \item \textbf{Data Science}: Statistics, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision  \\[-0.55cm]
+  \item \textbf{Generative AI}: Foundation Models, Attention \& Transformers, Stable Diffusion, Prompt Engineering, \\Vector Databases, Chunking Strategy, Context Management, Retrieval-augmented Generation (RAG), \\Agentic Framework, Large Language Models' Finetuning, Model Optimization for GPUs \\[-0.55cm]
+  \item \textbf{Tools/Libraries}: Numpy, Pandas, Scikit-learn, PyTorch, HuggingFace, LangChain, Flask \\[-0.55cm]
+  \item \textbf{Others}: MLOps, LLMOps, Git, Docker, AWS, Azure, Jira
 \end{itemize}
+% }}}
+
 \vspace{2pt}
 \noindent
 \resheading{\textbf{\large Key Projects}}\\[\lsep] 
@@ -410,21 +455,6 @@
 %     \end{tabular}
 % \end{flushleft}
 % %}}} 
-
-\vspace{4pt}
-\noindent
-\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
-\\[-0.2cm]
-
-%{{{
-\begin{itemize}
-  \item \textbf{Languages}: Python, SQL\\[-0.5cm]
-  \item \textbf{Data Science}: Statistics, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision  \\[-0.55cm]
-  \item \textbf{Generative AI}: Foundation Models, Attention \& Transformers, Stable Diffusion, Prompt Engineering, \\Vector Databases, Chunking Strategy, Context Management, Retrieval-augmented Generation (RAG), \\Agentic Framework, Large Language Models' Finetuning, Model Optimization for GPUs \\[-0.55cm]
-  \item \textbf{Tools/Libraries}: Numpy, Pandas, Scikit-learn, PyTorch, HuggingFace, LangChain, Flask \\[-0.55cm]
-  \item \textbf{Others}: MLOps, LLMOps, Git, Docker, AWS, Azure, Jira, 
-\end{itemize}
-% }}}
 
 % %{{{
 % \begin{itemize}

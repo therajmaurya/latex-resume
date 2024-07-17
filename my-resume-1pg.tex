@@ -1,0 +1,246 @@
+\documentclass[a4paper,10pt]{article}
+%-----------------------------------------------------------
+% {{{
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{booktabs}
+\usepackage{fontawesome5}
+\usepackage[colorinlistoftodos]{todonotes}
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{enumitem}
+\usepackage{multicol}
+
+% \usepackage{helvetica}
+% \usepackage{array}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+% \textheight=10in
+\setlength{\tabcolsep}{0in}
+\setlist[itemize]{leftmargin=*}
+
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.5cm}
+\renewcommand{\labelitemii}{$\circ$}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.375in}
+%\addtolength{\evensidemargin}{-0.375in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{0.1375in}
+%\addtolength{\textheight}{1.75in}
+% \hyphenation{thatshouldnot}
+\usepackage[none]{hyphenat}
+% \raggedbottom
+% \raggedright
+\pagestyle{empty}
+% }}}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small
+        {
+            \begin{minipage}
+                {0.992\textwidth}\textbf{{\textsc{#1 \vphantom{p\^{E}} }}}
+                \\[-0.3cm]
+                \hrule
+            \end{minipage}
+            \\[-0.5cm]
+        }
+ }}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+    \textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+
+\newcommand{\resEduHeading}[6]{
+  \begin{tabular*}{7.1in}{l @{\extracolsep{\fill}} r}
+    \textbf{\normalsize #1} \\
+    \textit{#2} & \textit{#3} \\
+    {\normalsize #4} & \textit{{#5} \textbf{#6}}
+  \end{tabular*}
+}
+
+
+% \textit{#3} &  \\
+%-----------------------------------------------------------
+
+\begin{document}
+%{{{
+
+\begin{center}
+  {\Huge Raj Kumar Maurya}\\[4pt]
+  % $\bullet$
+  \href{tel:+919044883800}{\faPhone* \hspace{1pt}  +91-9044883800} \hspace{4pt} 
+    % $\bullet$
+    \href{mailto:therajmaurya@gmail.com}{\faAt \hspace{1pt} therajmaurya@gmail.com} \\[4pt]
+    % $\bullet$
+    \href{https://github.com/therajmaurya}{\faGithub \hspace{1pt} GitHub}
+    % $\bullet$ 
+    \hspace{4pt} 
+    \href{https://www.linkedin.com/in/therajmaurya}{\faLinkedinIn \hspace{1pt} LinkedIn}
+    % $\bullet$ 
+    \hspace{4pt}
+    \href{https://therajmaurya.github.io}{\faGlobe \hspace{1pt} Website}
+    % $\bullet$ 
+    \hspace{4pt}
+    \href{https://therajmaurya.github.io/certs}
+    {\faCertificate \hspace{1pt} Certifications}
+    % $\bullet$ 
+    \hspace{4pt}
+    \href{https://www.credly.com/users/therajmaurya/badges}{\faMedal \hspace{1pt} Badges}
+  
+\end{center}
+
+\vspace{4pt}
+\noindent
+\resheading{\textbf{\large Work Experience ($\sim$6 years)}}\\[\lsep]
+\vspace{4pt}
+% {{{
+\begin{itemize}
+    \item \textbf{Senior Data Scientist, Ernst \& Young Global Delivery Services (EY GDS)} \hfill {\emph{(July 2022 - Present)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Responsible for building end-to-end \textbf{Generative AI, NLP, and Computer Vision} solutions
+        \item \textbf{Managed} teams of up to \textbf{10 professionals} across diverse sectors including pharmaceuticals, automobiles, etc.
+        % \item Built MLOps pipelines for client-specific needs
+        \item Engaged with stakeholders to analyze business opportunities and propose strategic approaches and solutions
+        \item \textbf{Fine-tuned} FLAN-T5, Falcon-40B, etc. open source LLMs using techniques like \textbf{Quantization, LoRA, QLoRA,} etc.
+    \\ [-0.5cm]
+    \end{itemize}
+    
+    \item \textbf{Data Scientist, Diwo (DataFactZ) Pvt. Ltd.} \hfill {\emph{(July 2018 - June 2022)}}
+    \\ [-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Responsible for building end-to-end natural language processing solutions for the \textbf{Diwo ASK Platform}
+        \item \textbf{Led and guided teams of up to 3 professionals} in platform initiatives and engagements spanning retail, insurance, and finance domains
+        \item Worked with \textbf{cross-functional teams} to gather data, domain knowledge, handle dependencies, perform overlapping tasks, and deploy models in production  
+        % \item Worked on model explainability and trust aspect for client-specific projects
+        % \item Performed \textbf{causal inference analysis} using the What-If Tool to find out several impact points
+    \\ [-0.5cm]
+    \end{itemize}
+
+\end{itemize}
+% }}}
+\vspace{4pt}
+\noindent
+\resheading{\textbf{\large Education}}\\[\lsep]
+\vspace{0pt}
+
+
+\begin{multicols}{2}
+
+    \begin{list}{}{\setlength{\leftmargin}{0.5cm} \setlength{\rightmargin}{0cm} \setlength{\itemindent}{0cm}}
+        \item 
+        \textbf{Master of Technology (Data Science)} \\
+        Indian Institute of Technology (IIT), Hyderabad \\
+        Start Year: 2022
+    \end{list}
+
+    \columnbreak
+
+    \begin{list}{}{\setlength{\leftmargin}{0.5cm} \setlength{\rightmargin}{0cm} \setlength{\itemindent}{0cm}}
+        \item 
+        \textbf{Bachelor of Technology (Information Technology)} \\
+        Dr. A.P.J. Abdul Kalam Technical University, Lucknow \\
+        Start Year: 2014
+    \end{list}
+
+\end{multicols}
+
+\vspace{-4pt}
+\noindent
+\resheading{\textbf{\large Technical Skills}}\\[\lsep] 
+\\[-0.3cm]
+
+
+%{{{
+\begin{itemize}
+  \item[] $\circ$ \hspace{0.0cm} \textbf{Languages}: Python, SQL\\[-0.55cm]
+  \item[] $\circ$  \hspace{0.0cm} \textbf{Data Science}: Statistics, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision  \\[-0.55cm]
+  \item[] $\circ$  \hspace{0.0cm} \textbf{Generative AI}: Foundation Models, Attention \& Transformers, Stable Diffusion, Prompt Engineering, \\ \hspace*{0.3cm} Vector Databases, Chunking Strategy, Context Management, Retrieval-augmented Generation (RAG), \\ \hspace*{0.3cm} Agentic Framework, Large Language Models' Finetuning, Model Optimization for GPUs \\[-0.55cm]
+  \item[] $\circ$  \hspace{0.0cm} \textbf{Tools/Libraries}: Numpy, Pandas, Scikit-learn, PyTorch, HuggingFace, LangChain, Flask \\[-0.55cm]
+  \item[] $\circ$  \hspace{0.0cm} \textbf{Others}: MLOps, LLMOps, Git, Docker, Kubernetes, AWS, Azure, Jira, Terraform
+\end{itemize}
+% }}}
+
+\vspace{2pt}
+\noindent
+\resheading{\textbf{\large Key Projects}}\\[\lsep] 
+\vspace{4pt}
+% {{{
+\begin{itemize}
+\item \textbf{EY: Infrastructure-as-Code (IAC) Script Generation [GenAI]}  
+\\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Enhanced IAC compliance and adoption, reducing scripting time from weeks to days; developed a \textbf{conversational chat interface} for personalized script generation; implemented validation and mitigation mechanisms
+        \item Utilized \textbf{RAG}-based approach, signature matching, slot-filling, and multi-stage few-shot prompting
+        \item Achieved over \textbf{50\% reduction in manual} IAC provisioning effort and improved overall adoption
+    \end{itemize}
+
+\item \textbf{EY: Photo-review Automation [Computer Vision]} 
+\\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+        \item Enhanced customer experience on a resale car company's website by accurately associating and reviewing vehicle images, \textbf{minimizing overall review effort}
+
+        \item Led development of an end-to-end solution using transfer learning of pre-trained models for car image classification
+        
+        \item Employed Text and Object Detection Models, achieving a \textbf{92\% reduction in manual photo review} effort
+        
+        \item Integrated and deployed 16+ models including \textbf{VGG16, ResNet, YOLOv5, YOLOv8, SVM,} etc. using CI/CD
+    \end{itemize}
+    
+\item \textbf{Diwo: Related Questions Suggestion [NLP]} 
+    \\[-0.6cm]
+    \begin{itemize}\itemsep \isep
+    	\item Reduced the barrier for users to interact with the system by suggesting cold start questions and context-aware questions during an active session 
+        \item Built \textbf{context-aware prediction} of questions that the user might be interested in asking next based on their past interaction, behavior, and questions
+        \item Conceptualised and designed the end-to-end architecture and approach from scratch 
+        \item The modeling also encompasses \textbf{user permission level security} in post-processing and multi-use case aspects in \\ pre-processing with the help of ontology. 
+        \item The \textbf{click rate} of the suggestions was close to \textbf{30\% across use cases}.
+        \\ [-0.5cm]
+    \end{itemize}
+
+% \item \textbf{Diwo: Paid Rate Prediction for quotes offered by insurer [Classical ML]}  
+%     \\[-0.6cm]
+%     \begin{itemize}\itemsep \isep
+%         \item Predicted whether a customer will accept the quote offered or not within the specified periods, to \textbf{streamline the marketing strategy} and target the potential customer 
+%         \item Built the model, handled imbalance and \textbf{performed causal inference} for the client to find the list of KPIs affecting the quote acceptance 
+%         % \item Handled the issue of imbalanced data
+%         % \\ [-0.5cm]
+%     \end{itemize}
+% \end{itemize}
+
+% }}}
+
+
+\vspace{4pt}
+\noindent
+\resheading{\textbf{\large Achievements and Activities}}\\[\lsep] 
+\\[-0.2cm]
+%{{{
+    \begin{itemize}
+    
+    \item[] $\circ$  \hspace{0.0cm} Received multiple \textbf{Spot \& Innovation awards} at EY. Recognised as the \textbf{best employee} of the month twice at Diwo \\[-0.5cm]
+    
+    \item[] $\circ$  \hspace{0.0cm} \textbf{Trained 400+ participants} across business lines on Generative AI, Transformers and NLP at EY  \\[-0.5cm]
+    
+    \item[] $\circ$  \hspace{0.0cm} Among 300 participants worldwide to complete \textbf{IBM Quantum Computing Challenge} 2020 (Advanced) \\[-0.5cm]
+    
+    \item[] $\circ$  \hspace{0.0cm} Participated in the Smart India \textbf{Hackathon} organized by MHRD, AICTE, India (2018) \\[-0.5cm]
+    
+    \item[] $\circ$  \hspace{0.0cm} Member of college society -- Big Data Centre of Excellence (2016-18) [\textbf{Technical Head} during  2017-18] \\[-0.55cm]
+    
+    \item[] $\circ$  \hspace{0.0cm} \textbf{Organised and mentored workshops} on Big Data Science technologies for three consecutive years at BDCOE \\[-0.55cm]
+    	
+    \end{itemize}
+%}}}
+\end{itemize}
+\end{document}
